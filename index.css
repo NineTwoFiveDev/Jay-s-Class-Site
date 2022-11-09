@@ -50,12 +50,12 @@ body{
     max-height: 50%;
 }
 #one img{
-    width: 25%;
-    height: 25%;
+    width: 200px;
+    height: 200px;
 }
 #two img{
-    width: 25%;
-    height: 25%;
+    width: 200px;
+    height: 200px;
 }
 .footer{
     margin-top: 20px;
