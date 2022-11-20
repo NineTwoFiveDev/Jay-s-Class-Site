@@ -54,6 +54,7 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    width: 90%;
 }
 .left-img{
     padding-right: 10px;
@@ -102,4 +103,11 @@ ul{
     list-style-position: inside;
     padding-left: 3px;
     margin-bottom: 20px;
+}
+#one{
+    height: 270px;
+}
+#one img{
+    max-width: 300px !important;
+    width: 300px !important;
 }
