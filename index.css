@@ -44,18 +44,11 @@ body{
 }
 .slide p{
     font-size: large;
+    text-align: justify;
 }
 .slide img{
-    max-width: 50%;
-    max-height: 50%;
-}
-#one img{
-    width: 200px;
-    height: 200px;
-}
-#two img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 .footer{
     margin-top: 20px;
@@ -65,10 +58,48 @@ body{
 .left-img{
     padding-right: 10px;
     padding-bottom: 10px;
+    max-width: 200px;
+    max-height: 200px;
     float: left;
 }
 .right-img{
     padding-left: 10px;
     padding-bottom: 10px;
+    max-width: 200px;
+    max-height: 200px;
     float: right;
+}
+.SS {
+    float: right;
+    padding-left: 10px;
+    padding-bottom:  10px;
+    width:50%;
+    height: 300px;
+}
+.SS img{
+    display: none;
+    object-fit: cover;
+}
+.video-wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.video-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.right{
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+ul{
+    list-style-position: inside;
+    padding-left: 3px;
+    margin-bottom: 20px;
 }
