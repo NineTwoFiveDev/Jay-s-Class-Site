@@ -16,11 +16,81 @@ body{
     color: #FE6D73;
     margin-top: 30px;
     padding-left: 10px;
+    margin-bottom: 60px;
+}
+.header h1 {
+    font-size: 36pt;
 }
 .header h3{
     padding-left:2px;
     color: #33658A;
 }
+.navbar {
+    width: 60%;
+    background-color: #555;
+    overflow: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+  }
+  .video-link{
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .navbar{
+        display: block;
+    }
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .video-wrapper{
+        display: none !important;
+    }
+    .video-wrapper iframe{
+        display: none !important;
+    }
+    .video-link{
+        display: block;
+    }
+    .left-img{
+        float: unset !important;
+    }
+    .right-img{
+        float: unset !important;
+    }
+    img{
+        max-width: 100% !important;
+        max-height: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    .footer{
+        word-wrap: break-word;
+    }
+  }
 .content{
     width: 60%;
     margin-left: auto;
@@ -42,6 +112,13 @@ body{
     color: #33658A;
     padding-left: 2px;
 }
+ul{
+    list-style-position: inside;
+    padding-left: 3px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 901px) {
 .slide p{
     font-size: large;
     text-align: justify;
@@ -82,12 +159,14 @@ body{
     object-fit: cover;
 }
 .video-wrapper{
+    display: block;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 56.25%;
 }
 .video-wrapper iframe{
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -99,15 +178,11 @@ body{
     padding-left: 20px;
     padding-bottom: 10px;
 }
-ul{
-    list-style-position: inside;
-    padding-left: 3px;
-    margin-bottom: 20px;
-}
 #one{
     height: 270px;
 }
 #one img{
     max-width: 300px !important;
     width: 300px !important;
+}
 }
